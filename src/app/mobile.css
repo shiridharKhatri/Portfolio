@@ -1,0 +1,921 @@
+@media (max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+  #hiddeOnDesktop {
+    display: none;
+  }
+
+  .otherSec .closeSearch {
+    display: none;
+  }
+  nav .otherSec {
+    transition: 0.2s ease;
+  }
+  .topMenuSecInfo {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .hidden {
+    display: inline-flex;
+  }
+  .banner {
+    margin: 5rem 0rem;
+    border-radius: 0;
+  }
+  nav #logo img {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+  }
+  nav #logo .imageProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav #logo .imageProfile .profileDe {
+    margin-left: 2rem;
+  }
+  nav #logo .imageProfile .profileDe h1 {
+    font-size: 2.5rem;
+    color: #f7cd46;
+  }
+  #DropDown li:hover {
+    background: #5626c43d;
+    color: #ffffff;
+  }
+  nav #logo .imageProfile .profileDe p {
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  nav ul {
+    position: fixed;
+    height: 90rem;
+    background: #000000;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    left: -100%;
+    width: 55rem;
+    padding: 1rem;
+    z-index: 99999;
+    transition: 0.2s cubic-bezier(0.65, 0.05, 0.44, 0.53) all;
+    border-radius: 0 0 3rem 0;
+  }
+  section.BelowButton {
+    padding: 0;
+    margin: 3rem 0;
+    width: 100%;
+  }
+  section.BelowButton ul {
+    width: 95%;
+    margin: auto;
+  }
+  .blogs {
+    padding: 1rem;
+  }
+  .blogs p {
+    width: 90%;
+  }
+  nav .otherSec .menu h1 {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* background: #5626c4; */
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #ffffff;
+  }
+  nav .otherSec form {
+    justify-content: center;
+    position: relative;
+    height: 6rem;
+    width: 31rem;
+    transition: 0.2s ease;
+  }
+  nav ul li span {
+    background-image: linear-gradient(135deg, #6b73ff 10%, #000dff 100%);
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 1rem;
+    color: #ffffff;
+  }
+  nav .otherSec form input {
+    padding: 1.2rem 0 1.2rem 2rem;
+  }
+  section.projects .projectCards .card .project-card-items {
+    background: transparent;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    color: var(--color);
+  }
+  .expertise .mainContent .contentCard {
+    flex: 0 0 18rem;
+  }
+  .items {
+    flex: 0 0 30rem;
+  }
+
+  .BlogContainer::-webkit-scrollbar {
+    display: none;
+  }
+  #DropDown {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 1.5rem;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    padding: 1rem;
+    /* height: 44%; */
+    border: none;
+  }
+  #DropDown::-webkit-scrollbar {
+    display: none;
+  }
+  #DropDown li {
+    height: auto;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0.5rem 0rem;
+    padding: 0.8rem;
+  }
+  nav ul .topMenuSecInfo .more {
+    font-size: 1.7rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-top: 0.1rem solid #445;
+    border-bottom: 0.1rem solid #445;
+    color: #ffffff;
+  }
+  .cardsSecParent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #DropDown li span {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    background-image: linear-gradient(135deg, #6b73ff 10%, #000dff 100%);
+    color: #ffffff;
+  }
+  nav #DropDown .more {
+    font-size: 1.7rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-top: 0.1rem solid #445;
+    border-bottom: 0.1rem solid #445;
+    color: #ffffff;
+  }
+  nav #DropDown .more h3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  nav #DropDown .more h3 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  nav ul .topMenuSecInfo .more h3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  nav ul .topMenuSecInfo .more h3 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  #contact {
+    display: none;
+  }
+  #AuthIco {
+    width: 96%;
+    height: 6rem;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #6b73ff 10%, #000dff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5rem;
+    margin: 0;
+  }
+  section.freeCode .codeSection {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem 0;
+  }
+  #moreItem {
+    display: none;
+  }
+  #logo {
+    width: 100%;
+    /* padding: 0 0 0 1.5rem; */
+    /* margin-bottom: 1rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    height: 12rem;
+  }
+  #logo .cancel h2 {
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    color: #445;
+  }
+  nav ul li {
+    font-size: 2rem;
+    width: 100%;
+    padding: 0.8rem;
+    justify-content: flex-start;
+    margin: 0.5rem 0.5rem;
+  }
+  section.projects .titleHead h3 {
+    font-size: 1.9rem;
+    margin: 0;
+  }
+  section.projects .titleHead {
+    margin-top: 8rem;
+  }
+  section.projects .projectCards .card {
+    background-color: transparent;
+    /* border-top: 0.1rem solid #445; */
+    border-radius: 0;
+    margin: 2rem 0;
+    /* padding: 2rem 0 0 0; */
+  }
+  section.projects .projectCards .card .buttons {
+    margin: 1rem 0 0 0;
+    padding: 1rem 0 0 0.5rem;
+  }
+  section.projects .projectCards img {
+    border-radius: 2rem;
+  }
+
+  section.projects .projectCards {
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .showMore button {
+    border-radius: 3rem;
+    width: 20rem;
+    font-size: 2rem;
+    height: 5rem;
+  }
+  #headerId {
+    height: 70rem;
+  }
+  #headerId h1 {
+    font-size: 20rem;
+  }
+  section.projects .projectCards .card .techUsed ul li {
+    font-size: 2.5rem;
+    margin: 0.2rem;
+    margin-top: 1rem;
+  }
+  section.projects .projectCards .card .buttons button {
+    font-size: 2rem;
+    background: transparent;
+    border-radius: 5rem;
+    height: auto;
+    margin: 1rem;
+    color: var(--color);
+  }
+
+  section.expertise {
+    margin: 10rem 0 0 0;
+  }
+  section.BelowButton li span {
+    display: none;
+  }
+  section.BelowButton li {
+    width: 100%;
+    margin: 0 0.5rem;
+  }
+  section.projects p {
+    width: 95%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  section.projects .projectCards .card .details h2 {
+    font-size: 2rem;
+  }
+  #footerId .topSection {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #footerId .topSection .topLogo {
+    background: #060606;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+  }
+  #footerId .topSection .flex-disp-footer {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  #footerId .fourthSection {
+    padding: 0;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 722px) {
+  nav ul {
+    height: 100vh;
+  }
+  section.projects
+  .projectCards-loader
+  .card-loader
+  .project-card-items-loader
+  .image-loader {
+    border-radius: 1rem;
+  }
+  #headerId h1 {
+    font-size: 15rem;
+  }
+  #headerId img {
+    width: 40rem;
+  }
+  section.profileSec .mainProfileSection {
+    flex-direction: column;
+  }
+  section.profileSec .mainProfileSection .profile-first {
+    width: 95%;
+    margin-bottom: 1rem;
+  }
+  .likeBtnImg{
+    border-radius: 1rem;
+  }
+  section.profileSec .mainProfileSection .profile-first .cardSec {
+    width: 100%;
+    height: 50rem;
+    padding: 3rem 0;
+  }
+  .suggestionCard {
+    padding: 1rem 0;
+    background: transparent;
+  }
+  .profile-second .suggestions {
+    background: transparent;
+  }
+  .suggestionCard {
+    margin-top: 1rem;
+  }
+  section.profileSec .mainProfileSection .profile-second {
+    width: 95%;
+  }
+  section.projects .projectCards img {
+    border-radius: 0.5rem;
+  }
+  section.projects .projectCards .card .buttons .container {
+    font-size: 2.3rem;
+  }
+  .cardsSecParent {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 0;
+  }
+  #animationText {
+    font-size: 7rem;
+  }
+  section.aboutSection .about-header {
+    height: 65rem;
+    width: 100%;
+    position: relative;
+  }
+  .bannerNumber .itms .number h2 {
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    /* background: #445; */
+  }
+  .bannerNumber .itms .number h3 {
+    font-size: 1.5rem;
+  }
+  .bannerNumber .itms .number h1 {
+    font-size: 2.8rem;
+    color: var(--btn-text-color);
+  }
+ 
+  .mailContent h2 {
+    color: var(--color);
+  }
+  .mailContent h4 {
+    color: var(--color);
+  }
+  .blogHead .content {
+    width: 95%;
+  }
+  .allBlogsSec {
+    padding: 1rem 0.5rem;
+  }
+  .cardsSecParent .cards {
+    box-shadow: none;
+    background: transparent;
+  }
+  .cardsSecParent .cards {
+    margin: 0;
+  }
+  .cardsSecParent .cards img {
+    border-radius: 1rem;
+  }
+  .blogHead .content h1 {
+    width: 100%;
+  }
+  .blogHead .content p {
+    width: 100%;
+  }
+  .mailImage {
+    display: none;
+  }
+  .mailContent {
+    width: 100%;
+  }
+  .mailSection {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  .mailContent form button {
+    height: 5rem;
+    border-radius: 3rem;
+  }
+  .mainServiceBox .cards-item h4 {
+    font-size: 2rem;
+  }
+  .mainServiceBox {
+    padding: 1rem 0;
+    margin: 3rem 0rem;
+    width: 100%;
+  }
+  .banner {
+    height: 18rem;
+  }
+  .secComment .sendSec form {
+    width: 100%;
+  }
+  .commentSec {
+    height: 90vh;
+  }
+  section.freeCode .codeSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 580px) {
+  .mailContent form,
+  .mailSection .cardMail {
+    background: transparent;
+  }
+  nav ul {
+    height: 100vh;
+    border-radius: 0;
+  }
+  .otherSec .closeSearch {
+    display: none;
+    color: #ffffff;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+  }
+  #hiddenInMobile {
+    display: none;
+  }
+  #hiddeOnDesktop {
+    display: flex;
+  }
+  .cardsSecParent .cards button {
+    width: 70%;
+    margin: 2rem 1rem 1rem 0rem;
+  }
+  nav .otherSec {
+    width: 75%;
+  }
+  .aboutMainSec {
+    padding: 0.5rem;
+  }
+  section.searchSec {
+    padding: 0.5rem;
+  }
+  section.searchSec .headerTitle {
+    margin: 6rem 0 7rem 0;
+  }
+  section.freeCode {
+    padding: 2rem 0;
+  }
+  section.freeCode .codeSection .codeCard .secCodeCard {
+    background-color: transparent;
+  }
+  section.freeCode .codeSection .codeCard {
+    background: transparent;
+  }
+  section.freeCode .codeSection .codeCard {
+    margin: 0;
+  }
+  section.freeCode .codeSection .codeCard .imageCode {
+    border-radius: 1.5rem;
+  }
+  .btnsCode button {
+    height: 4.5rem;
+  }
+  .freeCode h1 {
+    margin: 1rem 2rem;
+  }
+  .notfoundSection p {
+    width: 90%;
+  }
+  #animationText {
+    font-size: 6rem;
+  }
+  .bannerNumber {
+    /* background-image: linear-gradient(135deg, #ffe985 10%, #fa742b 100%); */
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    top: -7rem;
+  }
+  .bannerNumber .itms .number h1 {
+    font-size: 2.8rem;
+    color: #445;
+  }
+  .blogTitleHead select {
+    padding: 1rem;
+    border: none;
+    border-radius: 2.5rem;
+    background: var(--btn-bg-color);
+  }
+  .secComment .sendSec form {
+    width: 100%;
+  }
+  .postReviewSection {
+    width: 95%;
+  }
+  .postReviewSection .chooseUser {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rating svg {
+    width: 3rem;
+    height: 4rem;
+  }
+  #profile-img-select {
+    height: 9.5rem;
+    width: 9.5rem;
+  }
+  .login .errorPopuo {
+    font-size: 1rem;
+    width: 90%;
+  }
+  .postReviewSection ul li {
+    font-size: 1.5rem;
+  }
+  .postReviewSection button {
+    height: 5rem;
+  }
+  .postReviewSection h5 {
+    width: 100%;
+  }
+  #AuthIco {
+    width: 100%;
+    height: 5.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    margin: 0;
+  }
+  section.projects p {
+    font-size: 1.5rem;
+  }
+  #headerId h1 {
+    font-size: 10rem;
+  }
+  #headerId {
+    height: 65rem;
+  }
+  nav ul {
+    width: 100%;
+  }
+  #DropDown {
+    padding: 0;
+    display: flex;
+  }
+  nav .logo img {
+    height: 8rem;
+    width: 6.5rem;
+  }
+  nav .otherSec form {
+    margin-right: 1rem;
+  }
+  nav .otherSec form #voice {
+    display: none;
+  }
+  nav .otherSec form button {
+    border-radius: 0rem 3rem 3rem 0rem;
+    /* width: 15%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .otherSec form input {
+    padding: 1.2rem 0 1.2rem 2rem;
+    width: 85%;
+  }
+  nav .otherSec form {
+    height: 5.5rem;
+    width: 100%;
+  }
+  nav.navbar {
+    padding: 2rem 1.5rem 1.5rem 1rem;
+  }
+  section.mainMailSection {
+    padding: 1rem;
+  }
+  .mailSection {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: transparent;
+  }
+  img#currentImage {
+    height: 8rem;
+    width: 8rem;
+  }
+  .cardsSecParent .cards .sec-card {
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+  }
+  #prevImg,
+  #nextImg {
+    height: 6.8rem;
+    width: 6.8rem;
+  }
+  nav ul li {
+    font-family: system-ui;
+    font-weight: 500;
+  }
+  section.projects .titleHead h3 {
+    font-size: 1.5rem;
+  }
+  /* #projectHeading,
+  #projectParagraph {
+    display: none;
+  } */
+  .blogTitleHead {
+    margin: 10rem 0rem 0 0rem;
+  }
+  .indBlogDesc img {
+    height: 10rem;
+    width: 13rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+  }
+  .indBlogDesc {
+    margin: 3rem 1rem;
+    padding: 2rem 1rem;
+  }
+  .indBlogDetails h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0 0;
+  }
+  .indBlogDesc .indBlogDetails .profile img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .descriptionOfBlog h1 {
+    margin-bottom: 1rem;
+  }
+  .descriptionOfBlog {
+    padding: 2rem;
+    margin-bottom: 6rem;
+  }
+  .services {
+    padding: 0.5rem;
+  }
+  .mainServiceBox .cards-item h4 {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0;
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-view-all button.learn-more {
+    margin-right: 0;
+  }
+  .services p {
+    width: 100%;
+  }
+  .mainServiceBox .cards-item img {
+    height: 12rem;
+    width: 12rem;
+  }
+  section.projects .projectCards .card .project-card-items {
+    background: transparent;
+  }
+  section.projects .projectCards .card {
+    background: transparent;
+    margin: 2rem 0;
+    /* padding: 0rem 0 2rem 0; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  #footerId .topSection .flex-disp-footer {
+    width: 100%;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mainSectiontestimonial .testimonial-card q {
+    width: 100%;
+  }
+  .imageTestimonial {
+    width: 90%;
+  }
+  .mainSectiontestimonial .testimonial-card img#currentImage {
+    height: 9rem;
+    width: 9rem;
+    margin: 0 2rem;
+  }
+  .mainServiceBox .cards-item {
+    height: 21rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.projects .projectCards .card .buttons button span.projectIco {
+    font-size: 2.5rem;
+  }
+  section.projects .projectCards img {
+    border-radius: 1rem;
+  }
+  section.projects .projectCards .card .buttons button {
+    font-size: 2rem;
+    /* height: 5rem; */
+    display: flex;
+    /* padding: 1.4rem 0; */
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1.5rem 0 1rem;
+  }
+
+  section.projects {
+    padding: 1rem 0;
+    margin: 5rem 0;
+  }
+
+  section.projects .projectCards .card .details {
+    padding: 0rem 1rem 0 1rem;
+  }
+  section.projects .projectCards .card .buttons {
+    margin: 0;
+  }
+  #blogStatus {
+    width: 9rem;
+  }
+  .banner h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+  }
+  .banner h3 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  #headerId h1 {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 340px) {
+  section.login,
+  section.signup {
+    background: transparent;
+    padding: 0;
+  }
+  section.login .mainLoginCard,
+  section.signup .mainSignupCard {
+    background-color: transparent;
+    width: 100%;
+  }
+  .mainSignupCard form button,
+  .mainSignupCard form p,
+  .mainSignupCard form input,
+  .mainSignupCard form label {
+    width: 100%;
+  }
+  section.verify .mainVerifyCard {
+    width: 100%;
+    background: transparent;
+  }
+  section.verify {
+    background: transparent;
+    padding: 0;
+    height: 60rem;
+  }
+  nav #DropDown .more {
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  nav ul .topMenuSecInfo .more {
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  nav ul li span {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+  }
+  nav .otherSec form {
+    height: 5rem;
+    width: 19rem;
+  }
+  #DropDown li span {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+  }
+  #DropDown li,
+  nav ul li {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+  #logo .cancel h2 {
+    font-size: 5rem;
+  }
+  nav #logo img {
+    height: 6rem;
+  }
+  nav ul .topMenuSecInfo .more h3 {
+    font-weight: 400;
+    font-size: 1.7rem;
+  }
+  #AuthIco {
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  #footerId .topSection .flex-disp-footer {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #footerId .topSection {
+    padding: 0;
+  }
+}
