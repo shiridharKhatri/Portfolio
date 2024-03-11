@@ -1,12 +1,12 @@
 import React from "react";
-import { FaIcons, BiIcons, TbIcons, FiIcons } from "./Icons";
+import { FaIcons, BiIcons, FiIcons } from "./Icons";
 export default function BelowButton() {
   const socialicons = [
     {
       name: "Facebook",
       color: "#4267B2",
       icon: <FaIcons.FaFacebookF />,
-      link: "https://www.facebook.com/profile.php?id=61553390668688",
+      link: "#",
     },
     {
       name: "Instagram",
@@ -18,25 +18,25 @@ export default function BelowButton() {
       name: "Linkedin",
       color: "#0A66C2",
       icon: <FaIcons.FaLinkedinIn />,
-      link: "",
+      link: "https://www.linkedin.com/in/shiridharkhatri/",
     },
     {
-      name: "Fiverr",
+      name: "Upwork",
       color: "#00b22d",
-      icon: <TbIcons.TbBrandFiverr />,
-      link: "",
+      icon: <BiIcons.BiLogoUpwork/>,
+      link: "https://www.upwork.com/freelancers/~01241e90d934b26b94",
     },
     {
       name: "Github",
       color: "#000000",
       icon: <FaIcons.FaGithub />,
-      link: "",
+      link: "https://github.com/shiridharKhatri",
     },
     {
       name: "Viber",
       color: "#7360F2",
       icon: <FaIcons.FaViber />,
-      link: "",
+      link: "viber://chat?number=+9779820610923",
     },
   ];
   return (

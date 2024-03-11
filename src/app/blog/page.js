@@ -37,7 +37,7 @@ export default function Page() {
   // console.log(blog);
   return (
     <>
-      <Nav position="fixed" image="./logo.png" />
+      <Nav position="fixed"/>
       <section>
         <div
           className="blogHead"

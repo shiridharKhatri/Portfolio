@@ -9,6 +9,7 @@ import {
   BiHomeAlt,
   BiLogOutCircle,
   BiGitRepoForked,
+  BiLogoUpwork,
 } from "react-icons/bi";
 import {
   AiOutlineInfoCircle,
@@ -25,7 +26,7 @@ import {
 import { RiServiceLine, RiMessage3Line, RiSendPlaneFill } from "react-icons/ri";
 import { CiStickyNote, CiImageOn, CiHeart } from "react-icons/ci";
 import { GoProjectRoadmap, GoCodeReview, GoFileCode } from "react-icons/go";
-import { SiNextdotjs,SiYourtraveldottv } from "react-icons/si";
+import { SiNextdotjs, SiYourtraveldottv } from "react-icons/si";
 import {
   FaNodeJs,
   FaViber,
@@ -71,7 +72,7 @@ import {
   BsPersonX,
   BsInfoLg,
 } from "react-icons/bs";
-import { TbBrandFiverr, TbPhoto } from "react-icons/tb";
+import { TbPhoto } from "react-icons/tb";
 import { FaLocationDot } from "react-icons/fa6";
 import {
   MdKeyboardVoice,
@@ -110,7 +111,6 @@ const Fa6Icons = {
   FaLocationDot,
 };
 const TbIcons = {
-  TbBrandFiverr,
   TbPhoto,
 };
 const BsIcons = {
@@ -139,7 +139,7 @@ const CgIcons = {
 };
 const SiIcons = {
   SiNextdotjs,
-  SiYourtraveldottv
+  SiYourtraveldottv,
 };
 const FaIcons = {
   FaNodeJs,
@@ -178,6 +178,7 @@ const BiIcons = {
   BiHomeAlt,
   BiLogOutCircle,
   BiGitRepoForked,
+  BiLogoUpwork,
 };
 const AiIcons = {
   AiOutlineInfoCircle,

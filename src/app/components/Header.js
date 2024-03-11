@@ -2,41 +2,41 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { BsIcons } from "./Icons";
-export default function Header(props) {
+export default function Header() {
   const [darkmode, setDarkmode] = useState(false);
   const changeMode = () => {
     let body = document.body;
     body.classList.toggle("darkMode");
     if (body.classList.contains("darkMode")) {
       setDarkmode(true);
-      localStorage.setItem("DarkModeOn", "true"); // Set a key-value pair
+      localStorage.setItem("DarkModeOn", "true");
     } else {
       setDarkmode(false);
-      localStorage.removeItem("DarkModeOn"); // Remove the key
+      localStorage.removeItem("DarkModeOn");
     }
   };
 
   const handleScrollDown = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
-      behavior: "smooth", // Smooth scroll behavior
+      behavior: "smooth",
     });
   };
-  useEffect(()=>{
+  useEffect(() => {
     let body = document.body;
-    let darkmode = localStorage.getItem('DarkModeOn');
-    if(darkmode === "true"){
+    let darkmode = localStorage.getItem("DarkModeOn");
+    if (darkmode === "true") {
       setDarkmode(true);
       body.classList.add("darkMode");
-    }else{
+    } else {
       setDarkmode(false);
       body.classList.remove("darkMode");
     }
-   },[])
+  }, []);
   return (
     <header
       style={{
-        background: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),url("./header.png")`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),url("/header.png")`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -45,7 +45,7 @@ export default function Header(props) {
     >
       <h1>Shiridhar</h1>
       <Image
-        src="./picture.png"
+        src="/picture.png"
         alt="picture"
         width={200}
         height={150}

@@ -43,7 +43,6 @@ export default function Home() {
               "The website's logo serves a dual purpose as a home navigation icon. Clicking on this distinctive logo seamlessly redirects users to the homepage, regardless of their current section. This streamlined functionality ensures a user-friendly experience and easy navigation throughout the site",
             side: "left",
             align: "start",
-    
           },
         },
         {
@@ -174,8 +173,8 @@ export default function Home() {
   };
   return (
     <>
-      <Nav tour={tour} position="fixed" image="./logo.png" />
-      <Header/>
+      <Nav tour={tour} position="fixed" />
+      <Header />
       <BelowButton />
       <Projects />
       <Expertise />
@@ -183,7 +182,7 @@ export default function Home() {
       <Services />
       <Testimonial />
       <Mail />
-      <Footer image="./secondLogo.png" />
+      <Footer />
     </>
   );
 }

@@ -197,7 +197,7 @@ export default function Verify(props) {
           </div>
           <div className="mainVerifyCard">
             <div className="imageLogo">
-              <Image src="./logo.png" alt="logo" width={200} height={150} />
+              <Image src="/logo.png" alt="logo" width={200} height={150} />
               <h3>hiridhar</h3>
             </div>
             <div id="welcomeTe">
@@ -294,7 +294,7 @@ export default function Verify(props) {
           </div>
           <div className="mainVerifyCard">
             <div className="imageLogo">
-              <Image src="./logo.png" alt="logo" height={100} width={150} />
+              <Image src="/logo.png" alt="logo" height={100} width={150} />
               <h3>hiridhar</h3>
             </div>
             <div id="welcomeTe">

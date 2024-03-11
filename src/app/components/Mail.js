@@ -36,7 +36,7 @@ export default function Mail() {
       <div className="mailSection" id="mailId">
         <div className="cardMail">
           <div className="mailImage">
-            <Image src="./mail.gif" alt="message" width={300} height={50} />
+            <Image src="/mail.gif" alt="message" width={300} height={50} />
           </div>
           <div className="mailContent" >
             <h2>

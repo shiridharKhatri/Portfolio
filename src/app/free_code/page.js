@@ -50,7 +50,7 @@ export default function Page() {
                   <div className="imageCode" style={{ background: e.color }}>
                     <Image
                       src={`${host}/freeCodeImage/${e.image}`}
-                      // src="./blogImage/blog1.png"
+                      // src="/blogImage/blog1.png"
                       style={{ height: "100%", width: "100%" }}
                       alt="codeImage"
                       // layout="responsive"

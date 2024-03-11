@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import {
   FaIcons,
   IoIcons,
-  TbIcons,
   FiIcons,
   Fa6Icons,
   AiIcons,
@@ -32,25 +31,25 @@ export default function Footer(props) {
       name: "Linkedin",
       color: "#0A66C2",
       icon: <FaIcons.FaLinkedinIn />,
-      link: "",
+      link: "https://www.linkedin.com/in/shiridharkhatri/",
     },
     {
-      name: "Fiverr",
+      name: "Upwork",
       color: "#00b22d",
-      icon: <TbIcons.TbBrandFiverr />,
-      link: "https://www.fiverr.com/shiridhar?public_mode=true",
+      icon:<BiIcons.BiLogoUpwork/>,
+      link: "https://www.upwork.com/freelancers/~01241e90d934b26b94",
     },
     {
       name: "Github",
       color: "#000000",
       icon: <FaIcons.FaGithub />,
-      link: "",
+      link: "https://github.com/shiridharKhatri",
     },
     {
       name: "Viber",
       color: "#7360F2",
       icon: <FaIcons.FaViber />,
-      link: "viber://add?number=123456789",
+      link: "viber://chat?number=+9779820610923",
     },
   ];
   const fetchRepo = async () => {
@@ -82,7 +81,7 @@ export default function Footer(props) {
     <footer id="footerId">
       <div className="topSection">
         <div className="topLogo">
-          <Image src={props.image} alt="logo" width={200} height={150} />
+          <Image src="/secondLogo.png" alt="logo" width={200} height={150} />
         </div>
         <div className="flex-disp-footer">
           <div className="secondSection item">
@@ -108,7 +107,7 @@ export default function Footer(props) {
           <div className="thirdSection item">
             <h1>Github Repos</h1>
             <ul>
-              {datas.slice(5, 11).map((e) => {
+              {datas?.slice(5, 11).map((e) => {
                 return (
                   <li key={e.id}>
                     <a

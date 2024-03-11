@@ -157,7 +157,7 @@ export default function Page() {
                             flex: "20rem 0 0",
                           }}
                         >
-                          {/* <Image src="./blogImage/blog1.png" height={150} width={200} /> */}
+                          {/* <Image src="/blogImage/blog1.png" height={150} width={200} /> */}
                           <h4>{e.title}</h4>
                         </div>
                       );

@@ -1,16 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
-import {
-  AiIcons,
-  MdIcons,
-} from "./Icons";
+import { AiIcons, BiIcons, MdIcons } from "./Icons";
 import Image from "next/image";
 import Cookies from "js-cookie";
 import { Alphabets, Profile } from "./Alphabets";
 
 import Loader from "../tools/Loader";
 export default function Testimonial() {
-
   const [imgs, setImage] = useState("");
   const [currentIndex, setCurrentIndex] = useState(1);
   const [reviews, setReviews] = useState([]);
@@ -99,12 +95,19 @@ export default function Testimonial() {
         className="testimonial"
         id="testimonialId"
         style={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./review.png")`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/review.png")`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
       >
+        {currentReview?.source === "upwork" ? (
+          <h3 id="reference" style={{ background: "#00b22d" }}>
+            <BiIcons.BiLogoUpwork />
+          </h3>
+        ) : (
+          ""
+        )}
         <h1>
           Feedback from our{" "}
           <span style={{ color: "#f7cd46" }}>Client&apos;s</span>.
@@ -122,7 +125,7 @@ export default function Testimonial() {
                   <Image
                     style={{ opacity: "0" }}
                     id="prevImg"
-                    src="./profile.png"
+                    src="/profile.png"
                     alt={reviews[currentIndex].display_name}
                     width={200}
                     height={150}
@@ -141,7 +144,7 @@ export default function Testimonial() {
                     height={150}
                   />
                 )}
-             
+
                 <Image
                   id="currentImage"
                   src={
@@ -157,14 +160,13 @@ export default function Testimonial() {
                   <Image
                     style={{ opacity: "0" }}
                     id="nextImg"
-                    src="./profile.png"
+                    src="/profile.png"
                     alt={
                       reviews[(currentIndex + 1) % reviews.length].display_name
                     }
                     width={200}
                     height={150}
                   />
-                  
                 ) : (
                   <Image
                     id="nextImg"
@@ -172,12 +174,13 @@ export default function Testimonial() {
                       reviews[(currentIndex + 1) % reviews.length]
                         .display_name === "unknown"
                         ? "./anonymous.png"
-                        : `${host}/reviewImage/${reviews[(currentIndex + 1) % reviews.length].img}`
+                        : `${host}/reviewImage/${
+                            reviews[(currentIndex + 1) % reviews.length].img
+                          }`
                     }
                     alt={
                       reviews[(currentIndex + 1) % reviews.length].display_name
                     }
-                    
                     width={200}
                     height={150}
                   />
