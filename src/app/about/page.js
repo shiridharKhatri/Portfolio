@@ -2,13 +2,11 @@
 import Nav from "../components/Nav";
 import React, { useEffect, useRef } from "react";
 import Footer from "../components/Footer";
-import { BiIcons, BsIcons, LuIcons, TbIcons, IoIcons } from "../components/Icons";
 import Typed from "typed.js";
 import { useRouter } from "next/navigation";
-
+import { BiIcons, BsIcons, LuIcons, TbIcons, IoIcons } from "../components/Icons";
 export default function Page() {
   const router = useRouter();
-  // Create reference to store the DOM element containing the animation
   const el = useRef(null);
 
   useEffect(() => {
@@ -20,18 +18,17 @@ export default function Page() {
     });
 
     return () => {
-      // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
   }, []);
   return (
     <>
-      <Nav position="fixed" image="./logo.png" />
+      <Nav position="fixed"/>
       <section className="aboutSection">
         <div
           className="about-header"
           style={{
-            background: `linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url("./header.png")`,
+            background: `linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url("/header.png")`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -43,13 +40,12 @@ export default function Page() {
               router.push("/");
             }}
           >
-            <BiIcons.BiHomeAlt />
+            <BiIcons.BiHomeAlt/>
           </button>
         </div>
         <div className="bannerNumber">
           <div
             className="projects itms"
-            // style={{ borderRight: "0.1rem solid #445" }}
           >
             <div className="number">
               <h2>
@@ -61,12 +57,12 @@ export default function Page() {
           </div>
           <div
             className="languages itms"
-            // style={{ borderRight: "0.1rem solid #445" }}
           >
             <div className="number">
               <h2>
                 {" "}
                 <LuIcons.LuCalendarClock />
+                
               </h2>
               <h3>Experience year</h3>
               <h1>3+</h1>
@@ -76,6 +72,7 @@ export default function Page() {
             <div className="number">
               <h2>
                 <BsIcons.BsPersonBadge />
+              
               </h2>
               <h3>Clients</h3>
               <h1>5</h1>
@@ -136,7 +133,7 @@ export default function Page() {
           </p>
           <div className="aboutBelowBtn">
             <button style={{background:"#7360F2"}}><IoIcons.IoMail/>&nbsp;Message me</button>
-            <button style={{background:"#00b22d"}}><TbIcons.TbBrandFiverr/>&nbsp;Hire me</button>
+            <button style={{background:"#00b22d"}}><BiIcons.BiLogoUpwork/>&nbsp;Hire me</button>
           </div>
         </div>
       </section>
