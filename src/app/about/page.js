@@ -83,7 +83,7 @@ export default function Page() {
         <div className="aboutMainSec">
           <h1>👨‍🎓Description👨‍🎓</h1>
           <p>
-            Hello, I'm Shiridhar Khatri, a BIT (Bachelor in Information
+            Hello, I&apos;m Shiridhar Khatri, a BIT (Bachelor in Information
             Technology) student at Informatic College Pokhara, affiliated with
             London Metropolitan University. Hailing from Nepal, I am passionate
             about exploring the ever-evolving world of information technology.
@@ -92,7 +92,7 @@ export default function Page() {
           </p>
           <h1>🌟 Skills & Strengths 🌟</h1>
           <p>
-            I'm great at building both the parts of websites: the stuff you see
+            I&apos;m great at building both the parts of websites: the stuff you see
             and interact with (like buttons and forms), and the
             behind-the-scenes stuff that makes it all work (like databases and
             servers). I use languages like HTML, CSS, and JavaScript for the
@@ -102,7 +102,7 @@ export default function Page() {
             storing and organizing data securely.
           </p>
           <h1>🚀 Projects & Accomplishments 🚀</h1>
-          <p>🔵 I've made various websites:</p>
+          <p>🔵 I&apos;ve made various websites:</p>
           <ul>
             <li>
               🔸Blogs and news sites where you can read and share stories, built
@@ -124,7 +124,7 @@ export default function Page() {
             </li>
           </ul>
           <p>
-            I'm comfortable using both simple and fancy tools for web
+            I&apos;m comfortable using both simple and fancy tools for web
             development, from basic HTML and CSS to advanced frameworks like
             ReactJS and NextJS.
           </p>
