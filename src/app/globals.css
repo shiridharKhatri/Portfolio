@@ -2638,19 +2638,19 @@ section.aboutSection .about-header button {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 10rem;
+  bottom: 5rem;
 }
 .bannerNumber {
   background: var(--card-primary-color);
   margin: 1rem auto;
-  width: 80rem;
+  /* width: 80rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 1rem;
   position: relative;
-  top: -10rem;
-  border-radius: 14rem;
+  top: -4rem;
+  border-radius: 2rem;
 }
 .bannerNumber .itms {
   display: flex;
@@ -2693,15 +2693,23 @@ section.aboutSection .about-header button {
   display: flex;
 }
 .aboutMainSec h1 {
-  font-size: 3rem;
-  margin: 0 0 1rem 0;
-  color: var(--btn-text-color);
-  font-family: "Belanosima", sans-serif;
+  font-size: 2.3rem;
+  margin: 1rem;
+
 }
 .aboutMainSec p {
-  font-size: 1.7rem;
+  margin: 1rem 2rem 4rem 2rem;
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+.aboutMainSec ul{
+  list-style: none;
+  margin: 1rem 2rem 4rem 2rem;
+}
+.aboutMainSec ul li{
+  font-size: 1.5rem;
+  font-family: monospace;
   margin: 1rem 0;
-  color: var(--color);
 }
 .bannerNumber .itms .number h2 {
   font-size: 3rem;
@@ -3092,7 +3100,25 @@ section.projects .projectCards .card .buttons .checkmark {
   transition: 100ms;
   animation: dislike_effect 400ms ease;
 }
-
+section.projects .btnsViewAll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+section.projects .btnsViewAll button{
+  padding: .8rem 2.5rem;
+  border-radius: 4.5rem;
+  border: none;
+  background: var(--btn-text-color);
+  color: var(--card-primary-color);
+  cursor: pointer;
+  height: 3.5rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 section.projects
   .projectCards
   .card

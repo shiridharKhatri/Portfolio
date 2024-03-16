@@ -287,6 +287,9 @@ export default function Projects() {
           </div>
         </>
       )}
+     <div className="btnsViewAll">
+      <button>View All</button>
+     </div>
     </section>
   );
 }
