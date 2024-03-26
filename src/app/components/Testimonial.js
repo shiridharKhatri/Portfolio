@@ -109,7 +109,7 @@ export default function Testimonial() {
           ""
         )}
         <h1>
-          Feedback from our{" "}
+          Feedback from{" "}
           <span style={{ color: "#f7cd46" }}>Client&apos;s</span>.
         </h1>
         <div className="mainSectiontestimonial">

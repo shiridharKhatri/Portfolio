@@ -100,7 +100,7 @@ export default function Projects() {
     <section id="projectSec" className="projects">
       <div className="topH">
         <h2>PORTFOLIO</h2>
-        <h1 id="projectHeading">Created Projects</h1>
+        <h1 id="projectHeading">Showcase</h1>
       </div>
 
       {loader ? (
