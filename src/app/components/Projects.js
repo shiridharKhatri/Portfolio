@@ -4,11 +4,14 @@ import { AiIcons, BiIcons, IoIcons, SiIcons, FaIcons, GrIcons } from "./Icons";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
+import Spinner from "../tools/Spinner";
 export default function Projects() {
   const host =
     process.env.NEXT_PUBLIC_HOST || "https://quaint-gray-ladybug.cyclic.app";
   const [data, setData] = useState([]);
   const [loader, setLoader] = useState(true);
+  const [clicked, setClicked] = useState(false)
+
   const router = useRouter();
   const tech = [
     {
@@ -287,9 +290,17 @@ export default function Projects() {
           </div>
         </>
       )}
-     <div className="btnsViewAll">
-      <button>View All</button>
-     </div>
+      <div className="btnsViewAll">
+        <button
+          onClick={() => {
+            router.push("/project");
+            setClicked(true);
+          }}
+        >
+          {clicked === true ?  <Spinner />:"View all"}
+         
+        </button>
+      </div>
     </section>
   );
 }

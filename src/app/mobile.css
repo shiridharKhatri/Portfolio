@@ -767,7 +767,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .mainSectiontestimonial .testimonial-card q {
-    width: 100%;
+    width: 85%;
   }
   .imageTestimonial {
     width: 90%;

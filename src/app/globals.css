@@ -1176,6 +1176,7 @@ button.learn-more:hover .button-text {
   font-size: 3rem;
   font-family: "Belanosima", sans-serif;
   color: #ffffff;
+  margin-bottom: 2rem;
 }
 
 .testimonial .header-paragraph {
