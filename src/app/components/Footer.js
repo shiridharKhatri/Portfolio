@@ -36,7 +36,7 @@ export default function Footer(props) {
     {
       name: "Upwork",
       color: "#00b22d",
-      icon:<BiIcons.BiLogoUpwork/>,
+      icon: <BiIcons.BiLogoUpwork />,
       link: "https://www.upwork.com/freelancers/~01241e90d934b26b94",
     },
     {
@@ -91,7 +91,12 @@ export default function Footer(props) {
                 <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="https://www.fiverr.com/shiridhar?public_mode=true" target="_blank">Hire me</Link>
+                <Link
+                  href="https://www.fiverr.com/shiridhar?public_mode=true"
+                  target="_blank"
+                >
+                  Hire me
+                </Link>
               </li>
               <li>
                 <Link href="/blog">Blogs</Link>
@@ -119,41 +124,37 @@ export default function Footer(props) {
                     <span
                       style={{
                         backgroundColor:
-                          e.language.toLowerCase() === "html" ||
-                          e.language.toLowerCase() === "HTML" ||
-                          e.language.toLowerCase() === "Html"
-                            ? "#ea4335"
-                            : e.language.toLowerCase() === "javascript" ||
-                              e.language.toLowerCase() === "JAVASCRIPT" ||
-                              e.language.toLowerCase() === "JavaScript"
-                            ? "#F0DB4F"
-                            : e.language.toLowerCase() === "scss" ||
-                              e.language.toLowerCase() === "SCSS" ||
-                              e.language.toLowerCase() === "Scss"
-                            ? "#d56ea3"
-                            : e.language.toLowerCase() === "css" ||
-                              e.language.toLowerCase() === "CSS" ||
-                              e.language.toLowerCase() === "Css"
-                            ? "#264de4"
+                          e.language &&
+                          (e.language.toLowerCase() === "html" ||
+                            e.language.toLowerCase() === "javascript" ||
+                            e.language.toLowerCase() === "scss" ||
+                            e.language.toLowerCase() === "css")
+                            ? e.language.toLowerCase() === "html"
+                              ? "#ea4335"
+                              : e.language.toLowerCase() === "javascript"
+                              ? "#F0DB4F"
+                              : e.language.toLowerCase() === "scss"
+                              ? "#d56ea3"
+                              : e.language.toLowerCase() === "css"
+                              ? "#264de4"
+                              : null
                             : null,
                       }}
                     >
-                      {e.language.toLowerCase() === "html" ||
-                      e.language.toLowerCase() === "HTML" ||
-                      e.language.toLowerCase() === "Html"
-                        ? icons.html
-                        : e.language.toLowerCase() === "javascript" ||
-                          e.language.toLowerCase() === "JAVASCRIPT" ||
-                          e.language.toLowerCase() === "JavaScript"
-                        ? icons.javascript
-                        : e.language.toLowerCase() === "scss" ||
-                          e.language.toLowerCase() === "SCSS" ||
-                          e.language.toLowerCase() === "Scss"
-                        ? icons.scss
-                        : e.language.toLowerCase() === "css" ||
-                          e.language.toLowerCase() === "CSS" ||
-                          e.language.toLowerCase() === "Css"
-                        ? icons.css
+                      {e.language &&
+                      (e.language.toLowerCase() === "html" ||
+                        e.language.toLowerCase() === "javascript" ||
+                        e.language.toLowerCase() === "scss" ||
+                        e.language.toLowerCase() === "css")
+                        ? e.language.toLowerCase() === "html"
+                          ? icons.html
+                          : e.language.toLowerCase() === "javascript"
+                          ? icons.javascript
+                          : e.language.toLowerCase() === "scss"
+                          ? icons.scss
+                          : e.language.toLowerCase() === "css"
+                          ? icons.css
+                          : null
                         : null}
                     </span>
                   </li>
@@ -171,7 +172,10 @@ export default function Footer(props) {
                   <Fa6Icons.FaLocationDot />
                 </span>
 
-                <a href="https://www.google.com/maps?q=Tutunga-15,33700,Pokhara,Nepal" target="_blank">
+                <a
+                  href="https://www.google.com/maps?q=Tutunga-15,33700,Pokhara,Nepal"
+                  target="_blank"
+                >
                   Tutunga-15, 33700
                   <br />
                   Pokhara, Nepal
@@ -190,7 +194,9 @@ export default function Footer(props) {
                   {" "}
                   <IoIcons.IoMail />
                 </span>
-                <a href="mailto:khatrishiridhar6@gmail.com">khatrishiridhar6@gmail.com</a>
+                <a href="mailto:khatrishiridhar6@gmail.com">
+                  khatrishiridhar6@gmail.com
+                </a>
               </li>
             </ul>
           </div>
@@ -200,9 +206,13 @@ export default function Footer(props) {
         <ul>
           {socialicons.map((e, index) => {
             return (
-              <li onClick={()=>{
-                window.open(e.link, "_blank");
-              }} key={index} style={{ background: e.color }}>
+              <li
+                onClick={() => {
+                  window.open(e.link, "_blank");
+                }}
+                key={index}
+                style={{ background: e.color }}
+              >
                 {e.icon}
               </li>
             );
