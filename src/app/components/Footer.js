@@ -195,7 +195,7 @@ export default function Footer(props) {
                   <IoIcons.IoMail />
                 </span>
                 <a href="mailto:khatrishiridhar6@gmail.com">
-                  khatrishiridhar6@gmail.com
+                  hello@shiridhar.me
                 </a>
               </li>
             </ul>

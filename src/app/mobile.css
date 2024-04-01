@@ -463,7 +463,7 @@
   }
   .mailSection {
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 6rem;
   }
   .mailContent form button {
     height: 5rem;
@@ -669,7 +669,7 @@
   }
   .mailSection {
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 6rem;
     padding: 1rem;
     background: transparent;
   }
